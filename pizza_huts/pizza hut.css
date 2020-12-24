@@ -1,0 +1,113 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* media queries */
+@media only screen and (max-width:800px){
+    /*.navbar-brand img{
+        margin-top:0px;
+        margin-left:15rem;
+    } */
+    .containercard{
+        margin:50px auto;
+        display:grid;
+        grid-template-columns:repeat(2,15rem);
+        gap:10px;
+        justify-content:center;
+    
+    }
+    .containercard .card img{
+        border-bottom-left-radius:20%;
+        border-bottom-right-radius:20%;
+        border-top-left-radius:5%;
+        border-top-right-radius:5%;
+    }
+    .containercard .card{
+        border-top-left-radius:5%;
+        border-top-right-radius:5%;
+        border-bottom-left-radius:7%;
+        border-bottom-right-radius:7%;
+        
+        
+        
+    }
+    .containercard .card .card-body button{
+        text-align:center;
+        width:14rem;
+        margin:10px 0px 0px -10px;
+        
+    }
+    .containercard .shopee .card-body button{
+        text-align:center;
+        width:14rem;
+        margin:35px 0px 0px -10px;
+        
+    }
+    .carousel-inner img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+
+@media only screen and (min-width:800px){
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.containercard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,18rem);
+    justify-content:center;
+    gap:50px; 
+}
+.containercard .card img{
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius:20%;
+    border-top-left-radius:5%;
+    border-top-right-radius:5%;
+}
+.containercard .card{
+    border-top-left-radius:5%;
+    border-top-right-radius:5%;
+    border-bottom-left-radius:7%;
+    border-bottom-right-radius:7%;
+}
+.containercard .card .card-body button{
+    text-align:center;
+    width:14rem;
+    margin:10px 0px 0px -10px;
+}
+.containercard .shopee .card-body button{
+    text-align:center;
+    width:14rem;
+    margin:12px 0px 0px -10px;
+}
+.containercard .app .card-body button{
+    text-align:center;
+    width:14rem;
+    margin:-2px 0px 0px -10px;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.facebook {
+    margin-left:-10rem;
+}
+}
+
+.card .card-body a{
+    text-decoration:none;
+    color: white;
+}
+footer .card-body .card-text:hover {
+    background-color:white;
+    color:black;
+    border-radius:20%;
+}
