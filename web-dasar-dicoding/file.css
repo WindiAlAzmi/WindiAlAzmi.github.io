@@ -1,0 +1,1040 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    /* don't forget to make margin and padding to be zero (0) because you will be free customize your website. 
+    for example : if you don't put this code, navbar always have a little distance with top browser. */
+    min-width: 0;
+    min-height: 0;
+}
+
+body {
+
+    border: 1px black solid;
+
+
+}
+
+.hamburger {
+    margin: 20px;
+    display: none;
+
+
+}
+
+.iconExit {
+    display: none;
+}
+
+header {
+    background-color: white;
+    font-size: 18px;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+
+}
+
+header nav .title img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+header nav .title {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0 auto;
+    margin-right: 30%;
+
+
+}
+
+nav {
+    /* separates 2 column -> for title and navigation */
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+
+nav ul {
+    position: relative;
+    padding: 4px;
+    height: 40px;
+    width: 60%;
+    display: flex;
+    flex: nowrap;
+    margin: 0 auto;
+    right: 10px;
+
+
+
+}
+
+
+nav ul li {
+    display: inline-block;
+    padding: 2px;
+    width: 140px;
+    text-align: center;
+    margin: 0 auto;
+
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+nav ul li h5:visited {
+    color: black;
+}
+
+nav ul li h5:hover {
+    padding: 10px;
+    background-color: hsl(193, 100%, 52%);
+    color: white;
+
+}
+
+nav ul .post {
+
+    position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul .post ul li {
+    width: 100%;
+    height: 20%;
+    margin-top: 10px;
+    padding: 4px;
+}
+
+nav ul .post ul li a:hover {
+    color: white;
+}
+
+nav ul .post ul {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    height: auto;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #0BCBFF;
+    align-items: flex-start;
+    width: 95%;
+    left: 2%;
+    top: 30px;
+    cursor: pointer;
+
+}
+
+nav ul .post ul.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+header .contentHead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+
+
+
+
+}
+
+header .contentHead .image {
+    width: 60%;
+}
+
+header .contentHead .image img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+header .contentHead .dataTeks {
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-left: -40px;
+
+}
+
+header .contentHead .dataTeks .teksH1 {
+    margin-bottom: 50px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+header .contentHead .dataTeks .tombol {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    cursor: pointer;
+
+
+
+
+
+}
+
+header .contentHead .dataTeks .tombol .tombol1 {
+    padding: 5px;
+    border-radius: 10%;
+    background-color: #0BCBFF;
+    margin-left: 6px;
+    width: 100%;
+    height: 40px;
+
+
+}
+
+.tombol1 h4:hover,
+.tombol2:hover {
+    color: white;
+}
+
+header .contentHead .dataTeks .tombol .tombol1 h4,
+.tombol2 h4 {
+    text-align: center;
+
+}
+
+header .contentHead .dataTeks .tombol .tombol2 {
+    background-color: #0BCBFF;
+    padding: 5px;
+    border-radius: 10%;
+    width: 100%;
+    height: 40px;
+    margin-left: 8px;
+
+}
+
+main {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+main #content {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #content article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+main #content article .feautures1,
+.feautures2 {
+
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+
+
+}
+
+
+
+main #content article .feautures1 .teks,
+.feautures2 .teks {
+    border-bottom: 2px solid #0BCBFF;
+    margin: 0 auto;
+
+
+}
+
+main #content article .isiFeauture,
+.isiFeauture2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 70px;
+    padding: 40px;
+    cursor: pointer;
+}
+
+
+
+main #content article .isiFeauture .cardWalk,
+.cardPlay,
+.cardFriend {
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10%;
+    box-shadow: 2px 4px 5px #0BCBFF;
+    margin-left: 15px;
+
+}
+
+main #content article .isiFeauture .cardWalk .walking,
+.cardPlay .playing,
+.cardFriend .friend {
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+
+main #content article .isiFeauture .cardWalk .walking img,
+.cardPlay .playing img,
+.cardFriend .friend img {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+
+/* bagian article ke -2 */
+main #content article .isiFeauture2 .payment,
+main #content article .isiFeauture2 .setTime,
+main #content article .isiFeauture2 .setDrive,
+main #content article .isiFeauture2 .setChat {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 10%;
+    color: black;
+    margin-left: 15px;
+    box-shadow: 4px 2px 2px 3px #0BCBFF;
+
+
+}
+
+main #content article .isiFeauture2 .payment .imgPay,
+.setTime .imgSet,
+.setDrive .imgSet,
+.setChat .imgSet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #0BCBFF;
+    margin: 0 auto;
+    height: auto;
+}
+
+main #content article .isiFeauture2 .payment .imgPay img,
+.setTime .imgSet img,
+.setChat .imgSet img,
+.setDrive .imgSet img {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+
+}
+
+/* bagian aside */
+aside {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.myProfile {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-shadow: 1px 2px 4px 2px #0BCBFF;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.imgProfile,
+.teksProfile {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
+}
+
+.imgProfile img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.myProfileTeks {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    font-size: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.myProfileTeks .teks {
+    border-bottom: 2px solid #0BCBFF;
+}
+
+.teksProfile ul li {
+    list-style-type: none;
+    text-align: center;
+}
+
+/* bagian footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #0BCBFF;
+    color: black;
+    padding: 20px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer1,
+.footer2 {
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+
+}
+
+.titleFooter h4 {
+    border-bottom: 2px solid white;
+}
+
+/* media queries */
+@media screen and (max-width:1000px) {
+    header nav .hamburger {
+        display: none;
+
+
+    }
+
+    .iconExit {
+        display: none;
+    }
+
+
+    header nav .title img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    header nav .title {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 5%;
+
+
+    }
+
+    nav {
+        /* separates 2 column -> for title and navigation */
+        display: flex;
+        width: 100%;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        position: relative;
+        padding: 4px;
+        height: 40px;
+        width: 60%;
+        margin-right: 5%;
+        display: flex;
+        flex-wrap: nowrap;
+
+
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 2px;
+        width: 140px;
+        text-align: center;
+
+
+
+    }
+
+    nav ul li a:hover {
+        color: black;
+    }
+
+
+    nav ul .post {
+
+        position: relative;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    nav ul .post ul li {
+        width: 100%;
+        height: 20%;
+        margin-top: 10px;
+        padding: 4px;
+    }
+
+    nav ul .post ul {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        height: auto;
+        visibility: hidden;
+        opacity: 0;
+        background-color: #0BCBFF;
+        align-items: flex-start;
+        width: 90%;
+        right: 0;
+        left: 0;
+        top: 30px;
+        cursor: pointer;
+
+    }
+
+    header .contentHead {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    header .contentHead .image {
+        width: 60%;
+    }
+
+    header .contentHead .image img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    header .contentHead .dataTeks {
+
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    header .contentHead .dataTeks .teksH1 {
+        margin-top: 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #content article {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    main #content article .isiFeauture {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    #content article .isiFeauture .cardWalk,
+    .cardPlay,
+    .cardFriend {
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+    }
+
+    main #content article .isiFeauture2 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    #content article .isiFeauture2 .payment,
+    .setTime,
+    .setDrive,
+    .setChat {
+        margin: 0 auto;
+        width: 40%;
+        margin-bottom: 50px;
+
+    }
+
+    #content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    aside .myProfile {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0 auto;
+        width: 30%;
+
+    }
+
+    aside .myProfileTeks {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    aside {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+
+    aside .teksProfile {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .imgProfile {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    footer {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer .footer1 {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    footer .footer2 {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+
+    }
+
+    .iconExit {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 10%;
+        margin-top: -20%;
+    }
+
+    header nav .hamburger {
+        width: 40%;
+        height: auto;
+        text-align: center;
+        display: block;
+
+
+
+    }
+
+    header nav .title img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    header nav .title {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 5%;
+        margin-left: 5%;
+
+    }
+
+    nav ul.active {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: grey;
+        opacity: 0.9;
+        top: 0;
+        bottom: 0;
+        justify-content: center;
+        transition: top 1s ease;
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    nav ul li {
+        padding: 8px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        background-color: #0BCBFF;
+
+
+    }
+
+
+    nav ul li:first-child a:hover {
+        border-radius: 0%;
+
+
+    }
+
+    nav ul .post.active {
+        margin-top: 20%;
+    }
+
+    nav ul .post {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav ul li a:hover {
+        color: black;
+        margin: 0 auto;
+
+    }
+
+    nav ul li a {
+        display: inline-block;
+
+    }
+
+    nav ul .post .smallDevice.active {
+        display: inline-block;
+        width: 120px;
+        height: 140px;
+        cursor: pointer;
+        position: relative;
+        right: 0;
+        left: 0;
+        top: 0;
+        text-align: center;
+        margin: auto;
+        border-radius: 10%;
+        visibility: hidden;
+        opacity: 0;
+        color: white;
+    }
+
+    nav ul .post .smallDevice.active {
+        visibility: visible;
+        opacity: 0.9;
+    }
+
+    nav ul .post .smallDevice li {
+        width: 100px;
+        height: 8px;
+        margin-top: 3px;
+    }
+
+
+    header .contentHead {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+
+    }
+
+    header .contentHead .image {
+        width: 50%;
+    }
+
+    header .contentHead .image img {
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+
+    }
+
+    header .contentHead .dataTeks {
+
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+
+    }
+
+    header .contentHead .dataTeks .teksH1 {
+        text-align: center;
+        width: 100%;
+        font-size: 16px;
+
+    }
+
+    header .contentHead .dataTeks .tombol {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        margin-top: -30px;
+        font-size: 16px;
+
+    }
+
+    header .contentHead .dataTeks .tombol .tombol1 {
+        border-radius: 10%;
+        background-color: #0BCBFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+
+    header .contentHead .dataTeks .tombol .tombol2 {
+        border-radius: 10%;
+        background-color: #0BCBFF;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+
+    header .contentHead .dataTeks .tombol .tombol1 h4,
+    .tombol2 h4 {
+        text-align: center;
+
+    }
+
+
+
+
+    /* main */
+    #content {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #content article {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    main #content article .isiFeauture {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    #content article .isiFeauture .cardWalk,
+    .cardPlay,
+    .cardFriend {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+    }
+
+    main #content article .isiFeauture2 {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding: 40px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    #content article .isiFeauture2 .payment,
+    .setTime,
+    .setDrive,
+    .setChat {
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+
+    /*aside */
+    aside .myProfile {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin: 0 auto;
+        width: 60%;
+
+    }
+
+    aside .myProfileTeks {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        font-size: 20px;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    aside {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+    }
+
+    aside .teksProfile {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .imgProfile {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        font-size: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    /*footer */
+    footer {
+        width: 100%;
+        margin: auto;
+    }
+
+    footer .footer1 {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    footer .footer2 {
+        width: 100%;
+        margin: auto;
+    }
+
+    header .contentHead {
+        margin: 0 auto;
+    }
+}
